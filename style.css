@@ -321,6 +321,7 @@ body {
     position: static;
   }
   .plan-1 {
+    position: absolute;
     top: 50%;
     right: 5%;
     margin-left: 5%; 
