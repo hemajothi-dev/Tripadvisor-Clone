@@ -55,8 +55,8 @@ body {
 .sign {
   border: none;
   border-radius: 20px;
-  background-color: black;
-  color: white;
+  background-color: #32dfa0;
+  color: black;
   padding: 10px;
 }
 
@@ -85,7 +85,7 @@ body {
   border: solid whitesmoke 1px;
   border-radius: 30px;
   width: 50%;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -107,13 +107,13 @@ body {
 .search-bar h4 {
   border: none;
   border-radius: 20px;
-  background-color: black;
-  color: whitesmoke;
+  background-color:#32dfa0;
+  color: black;
   padding: 10px;
 }
 .searchbutton {
   position: absolute;
-  left: 68%;
+  left: 70%;
 }
 
 .trip-image {
@@ -151,7 +151,7 @@ body {
   left: 55%;
   right: 25%;
   top: 80%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   animation-name: zoom;
   animation-duration: 2s;
 }
@@ -160,6 +160,7 @@ body {
 }
 .plan-1 p{
   font-size: 20px;
+  
 }
 
 .trip-button {
@@ -301,10 +302,11 @@ body {
 .footer__site3 span {
   padding: 10px;
   gap: 30px;
+  justify-content: space-between;
 }
 
 /* Mobile view */
-@media screen  and (min-width:500px) and (max-width: 600px) {
+@media screen  and (min-width:300px) and (max-width: 699px) {
   .sign-in,
   .button,
   .search-option {
@@ -350,27 +352,31 @@ body {
     display: inline-flex;
     position: relative;
     top: 40%;
+    gap:10px;
   }
 }
 
-/* tablet mode panu */
+/* Tablet mode */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   .trip-image {
+    /* display: none; */
     width: 90%;
   }
 
   .plan-1 {
-    width: 40%;
+    width: 30%;
     position: absolute;
-    top: 75%;
-    right:20%;
+    top: 70%;
+    left:58%;
   }
 
   .trip-button {
-    font-size: 100%;
-    padding: 10px;
-    border-radius: 40px;
-    margin: 10px;
+    font-size: 100% ;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 5px;
+    position: absolute;
+    left:20%;
   }
   .plan2__sec img {
     width: 100%;
@@ -382,5 +388,14 @@ body {
   .img-container {
     width: 70%;
     height: 80%;
+  }
+   .footer__site2 p {
+    position: relative;
+  }
+  .footer__site3 span {
+    display: inline-flex;
+    position: relative;
+    top: 40%;
+    justify-content: space-between;
   }
 }
