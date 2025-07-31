@@ -306,7 +306,7 @@ body {
 }
 
 /* Mobile view */
-@media screen  and (min-width:300px) and (max-width: 699px) {
+@media screen and (max-width: 768px) {
   .sign-in,
   .button,
   .search-option {
@@ -356,8 +356,8 @@ body {
   }
 }
 
-/* Tablet mode */
-@media screen and (min-width: 700px) and (max-width: 1200px) {
+/* Lap and Desk mode */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .trip-image {
     /* display: none; */
     width: 90%;
